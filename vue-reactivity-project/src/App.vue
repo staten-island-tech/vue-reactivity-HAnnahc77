@@ -1,13 +1,16 @@
 <template>
-  <header>
-    <div class="header">
-      <nav>
-        <RouterLink to="/">Items</RouterLink>
-        <RouterLink to="/cart">Cart</RouterLink>
-      </nav>
-    </div>
-  </header>
-  <RouterView />
+  <div class="container">
+    <h1>Store</h1>
+    <header>
+      <div class="header">
+        <nav>
+          <RouterLink to="/">Items</RouterLink>
+          <RouterLink to="/cart">Cart</RouterLink>
+        </nav>
+      </div>
+    </header>
+    <RouterView />
+  </div>
 </template>
 
 <script setup>
@@ -15,10 +18,34 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <style scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  text-align: center;
+  padding-top: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 40px;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+nav a:hover {
+  color: #007bff;
 }
 </style>
