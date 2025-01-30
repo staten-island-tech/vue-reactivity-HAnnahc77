@@ -1,0 +1,124 @@
+<template>
+  <div></div>
+</template>
+
+<script>
+const albums = [
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/4/42/TheBeatlesAlbumCover.jpg',
+    name: 'Abbey Road',
+    price: '$24.99',
+    band: 'The Beatles',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/7/7a/LetItBeTheBeatles.jpg',
+    name: 'Let It Be',
+    price: '$18.99',
+    band: 'The Beatles',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/1/17/Pink_Floyd_-_The_Wall.jpg',
+    name: 'The Wall',
+    price: '$22.99',
+    band: 'Pink Floyd',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/a/a2/Hotel_California_-_Eagles.jpg',
+    name: 'Hotel California',
+    price: '$19.99',
+    band: 'Eagles',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/1/1e/NirvanaNevermindalbumcover.jpg',
+    name: 'Nevermind',
+    price: '$16.99',
+    band: 'Nirvana',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/7/76/Back_in_Black.jpg',
+    name: 'Back in Black',
+    price: '$21.99',
+    band: 'AC/DC',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/1/13/TheDarkSideOfTheMoon.png',
+    name: 'The Dark Side of the Moon',
+    price: '$25.99',
+    band: 'Pink Floyd',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/3/3e/The_White_Album.jpg',
+    name: 'The Beatles (The White Album)',
+    price: '$27.99',
+    band: 'The Beatles',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/0/0d/Queen_-_A_Night_at_the_Opera.png',
+    name: 'A Night at the Opera',
+    price: '$23.99',
+    band: 'Queen',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/6/6d/MichaelJackson_Thriller.png',
+    name: 'Thriller',
+    price: '$19.99',
+    band: 'Michael Jackson',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/2/27/TheRollingStonesLetItBleedAlbumCover.jpg',
+    name: 'Let It Bleed',
+    price: '$18.99',
+    band: 'The Rolling Stones',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/1/13/IsThisIt_album_cover.jpg',
+    name: 'Is This It',
+    price: '$17.99',
+    band: 'The Strokes',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/7/74/Rumours_Album_Artwork.jpg',
+    name: 'Rumours',
+    price: '$21.49',
+    band: 'Fleetwood Mac',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/2/28/Black_Sabbath_-_Master_of_Reality.jpg',
+    name: 'Master of Reality',
+    price: '$19.99',
+    band: 'Black Sabbath',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/6/6c/Are_You_Experienced.jpg',
+    name: 'Are You Experienced',
+    price: '$20.99',
+    band: 'The Jimi Hendrix Experience',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/2/2f/Black_Album.jpg',
+    name: 'Metallica (The Black Album)',
+    price: '$24.99',
+    band: 'Metallica',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/0/05/Big_Brother_and_the_Holding_Company_-_Cheap_Thrills.jpg',
+    name: 'Cheap Thrills',
+    price: '$17.49',
+    band: 'Big Brother and the Holding Company',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/d/df/StickyFingers.jpg',
+    name: 'Sticky Fingers',
+    price: '$19.49',
+    band: 'The Rolling Stones',
+  },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/0/01/BridgeOverTroubledWater.jpg',
+    name: 'Bridge Over Troubled Water',
+    price: '$22.99',
+    band: 'Simon & Garfunkel',
+  },
+]
+</script>
+
+<style lang="scss" scoped></style>

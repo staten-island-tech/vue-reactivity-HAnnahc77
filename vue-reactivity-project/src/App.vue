@@ -40,7 +40,6 @@ h1 {
 }
 
 nav a {
-  text-decoration: none;
   font-size: 1.2rem;
   color: #000;
 }
