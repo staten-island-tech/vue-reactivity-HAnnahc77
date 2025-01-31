@@ -1,9 +1,4 @@
-<template>
-  <div></div>
-</template>
-
-<script>
-const albums = [
+export const AlbumArray = [
   {
     img: 'https://upload.wikimedia.org/wikipedia/en/4/42/TheBeatlesAlbumCover.jpg',
     name: 'Abbey Road',
@@ -119,6 +114,3 @@ const albums = [
     band: 'Simon & Garfunkel',
   },
 ]
-</script>
-
-<style lang="scss" scoped></style>
