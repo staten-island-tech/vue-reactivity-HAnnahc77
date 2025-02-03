@@ -35,8 +35,16 @@ h1 {
 
 .header {
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
   margin-top: 20px;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
 }
 
 nav a {

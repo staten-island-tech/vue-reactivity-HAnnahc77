@@ -113,4 +113,10 @@ export const AlbumArray = [
     price: '$22.99',
     band: 'Simon & Garfunkel',
   },
+  {
+    img: 'https://upload.wikimedia.org/wikipedia/en/1/16/Goodbye_Yellow_Brick_Road.jpg',
+    name: 'Goodbye Yellow Brick Road',
+    price: '$21.99',
+    band: 'Elton John',
+  },
 ]
