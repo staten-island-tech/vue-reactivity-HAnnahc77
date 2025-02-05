@@ -102,19 +102,19 @@ export const AlbumArray = [
     band: 'Big Brother and the Holding Company',
   },
   {
-    img: 'https://upload.wikimedia.org/wikipedia/en/4/45/Metallica_-_Ride_the_Lightning.jpg',
+    img: 'public/album18.jpg',
     name: 'Ride the Lightning',
     price: '$21.99',
     band: 'Metallica',
   },
   {
-    img: 'https://upload.wikimedia.org/wikipedia/en/0/01/BridgeOverTroubledWater.jpg',
+    img: 'public/album19.jpg',
     name: 'Bridge Over Troubled Water',
     price: '$22.99',
     band: 'Simon & Garfunkel',
   },
   {
-    img: 'https://upload.wikimedia.org/wikipedia/en/1/16/Goodbye_Yellow_Brick_Road.jpg',
+    img: 'public/album20.jpg',
     name: 'Goodbye Yellow Brick Road',
     price: '$21.99',
     band: 'Elton John',
