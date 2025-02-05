@@ -4,7 +4,6 @@
       <AlbumCard v-for="album in AlbumArray" :key="album.name" :album />
     </div>
   </main>
-  <div></div>
 </template>
 
 <script setup>

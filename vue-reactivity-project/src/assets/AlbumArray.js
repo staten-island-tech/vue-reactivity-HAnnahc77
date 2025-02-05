@@ -30,7 +30,7 @@ export const AlbumArray = [
     band: 'Nirvana',
   },
   {
-    img: 'public/album6.jpg',
+    img: 'public/album6.png',
     name: 'Back in Black',
     price: '$21.99',
     band: 'AC/DC',
@@ -120,3 +120,5 @@ export const AlbumArray = [
     band: 'Elton John',
   },
 ]
+
+export const AlbumInCartArray = []

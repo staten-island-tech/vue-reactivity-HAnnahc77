@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-    <h1>Store</h1>
+    <h1>Album Store</h1>
     <header>
       <div class="header">
         <nav>
-          <RouterLink to="/">Items</RouterLink>
+          <RouterLink to="/">Albums</RouterLink>
           <RouterLink to="/cart">Cart</RouterLink>
         </nav>
       </div>
@@ -40,6 +40,7 @@ h1 {
   max-width: 600px;
   margin-top: 20px;
   padding: 0 20px;
+  padding-bottom: 8px;
 }
 
 nav {
