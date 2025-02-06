@@ -15,16 +15,8 @@ defineProps({
   album: Object,
 })
 
-function intoCart() {
-  let isInCart = false
-  for (let i = 0; i < AlbumInCartArray.length; i++) {
-    if (AlbumInCartArray[i].name === album.name) {
-      isInCart = true
-    }
-  }
-  if (!isInCart) {
-    AlbumInCartArray.push(recipe)
-  }
+function intoCart(album) {
+  AlbumInCartArray.push(album)
 }
 </script>
 
