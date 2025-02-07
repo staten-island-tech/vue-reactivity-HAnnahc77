@@ -5,18 +5,22 @@
     <h3>{{ album.price }}</h3>
     <h3>Created by: {{ album.band }}</h3>
     <button class="addToCart" @click="intoCart">Add to cart</button>
+    <h4 v-if="inCart">Added!</h4>
   </div>
 </template>
 
 <script setup>
 import { AlbumInCartArray } from '@/assets/AlbumArray'
+import { ref } from 'vue'
 
 defineProps({
   album: Object,
 })
+const inCart = ref(false)
 
 function intoCart(album) {
   AlbumInCartArray.push(album)
+  inCart.value = !inCart.value
 }
 </script>
 
@@ -77,5 +81,24 @@ img {
 
 .addToCart:hover {
   background-color: #a1c2e4;
+}
+
+h4 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  animation: showFor3Seconds 3s forwards;
+}
+
+@keyframes showFor3Seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 </style>
