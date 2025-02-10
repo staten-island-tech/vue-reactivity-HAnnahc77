@@ -5,7 +5,7 @@
     <h3>{{ album.price }}</h3>
     <h3>Created by: {{ album.band }}</h3>
     <button class="addToCart" @click="intoCart">Add to cart</button>
-    <h4 v-if="inCart">Added!</h4>
+    <h4 v-if="h4">Added!</h4>
   </div>
 </template>
 
@@ -16,11 +16,14 @@ import { ref } from 'vue'
 defineProps({
   album: Object,
 })
-const inCart = ref(false)
+const h4 = ref(false)
 
 function intoCart(album) {
   AlbumInCartArray.push(album)
-  inCart.value = !inCart.value
+  h4.value = true
+  setTimeout(() => {
+    h4.value = false
+  }, 3000)
 }
 </script>
 
@@ -54,6 +57,11 @@ h3 {
   margin: 5px 0;
 }
 
+h4 {
+  font-size: 0.8em;
+  color: #555;
+}
+
 img {
   width: 250px;
   height: 250px;
@@ -84,21 +92,11 @@ img {
 }
 
 h4 {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.show {
   opacity: 1;
-  animation: showFor3Seconds 3s forwards;
-}
-
-@keyframes showFor3Seconds {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  transition:
+    opacity 2s ease-out,
+    visibility 0s 2s;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 </style>

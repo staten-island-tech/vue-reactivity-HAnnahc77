@@ -43,7 +43,7 @@ export const AlbumArray = [
   },
   {
     img: 'public/album8.jpg',
-    name: 'The Beatles (The White Album)',
+    name: 'The Beatles',
     price: '$27.99',
     band: 'The Beatles',
   },
@@ -91,7 +91,7 @@ export const AlbumArray = [
   },
   {
     img: 'public/album16.jpg',
-    name: 'Metallica (The Black Album)',
+    name: 'Metallica',
     price: '$24.99',
     band: 'Metallica',
   },
