@@ -12,17 +12,10 @@ import CartCard from '../components/CartCard.vue'
 </script>
 
 <style scoped>
-main {
+.cardCards {
   display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-
-.cartCards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 </style>
