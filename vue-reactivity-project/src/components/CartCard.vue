@@ -15,18 +15,12 @@ defineProps({
 <style scoped>
 .cartCard {
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
-  transition: all 0.3s ease;
-}
-
-.cartCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 900px;
+  align-items: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .cartCard h2 {
