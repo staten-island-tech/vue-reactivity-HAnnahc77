@@ -1,7 +1,7 @@
 <template>
   <div class="cartCard">
     <h2>{{ album.name }}</h2>
-    <h2>{{ album.price }}</h2>
+    <h2>$ {{ album.price }}</h2>
   </div>
 </template>
 

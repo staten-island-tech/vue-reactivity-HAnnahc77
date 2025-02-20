@@ -26,11 +26,13 @@ import { RouterLink, RouterView } from 'vue-router'
   height: 100vh;
   text-align: center;
   padding-top: 20px;
+  background-color: white;
 }
 
 h1 {
   margin: 0;
   font-size: 3rem;
+  color: black;
 }
 
 .header {

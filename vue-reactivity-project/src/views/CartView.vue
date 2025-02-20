@@ -2,26 +2,29 @@
   <main>
     <div class="cartCards">
       <CartCard v-for="album in AlbumInCartArray" :key="album.name" :album="album" />
-      <h2 v-if="AlbumInCartArray.length > 0">Total:{{ calcTotal(AlbumInCartArray) }}</h2>
+      <h2 class="bg-white" v-if="AlbumInCartArray.length > 0">Total: ${{ sumWithInitial }}</h2>
     </div>
   </main>
 </template>
 
 <script setup>
-import { AlbumInCartArray } from '../assets/AlbumArray'
-import CartCard from '../components/CartCard.vue'
+import { computed } from 'vue';
+import { AlbumInCartArray } from '../assets/AlbumArray'; 
+import CartCard from '../components/CartCard.vue';
 
-function calcTotal(AlbumInCartArray) {
-  let total = 0
-  AlbumInCartArray.forEach((album) => {
-    total += album.price
-  })
-}
+const sumWithInitial = computed(() => {
+  const total = AlbumInCartArray.reduce((accumulator, currentValue) => accumulator + currentValue.price, 0);
+  return total.toFixed(2); 
+});
 </script>
 
 <style scoped>
-.cardCards {
+.cartCards {
   align-items: center;
   justify-content: space-around;
+}
+
+h2 {
+  color: black;
 }
 </style>

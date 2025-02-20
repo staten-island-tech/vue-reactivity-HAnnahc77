@@ -2,7 +2,7 @@
   <div class="albumCard">
     <h2>{{ album.name }}</h2>
     <img :src="album.img" :alt="album.name" />
-    <h3>{{ album.price }}</h3>
+    <h3>$ {{ album.price }}</h3>
     <h3>Created by: {{ album.band }}</h3>
     <button class="addToCart" @click="intoCart(album)">Add to cart</button>
     <h4 v-if="h4">Added!</h4>
