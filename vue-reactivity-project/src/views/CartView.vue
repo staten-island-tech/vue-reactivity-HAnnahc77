@@ -25,6 +25,6 @@ const sumWithInitial = computed(() => {
 }
 
 h2 {
-  color: black;
+  color: white;
 }
 </style>

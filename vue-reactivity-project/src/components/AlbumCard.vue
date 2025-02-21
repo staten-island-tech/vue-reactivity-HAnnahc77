@@ -30,52 +30,43 @@ function intoCart(album) {
 <style scoped>
 .albumCard {
   width: 300px;
-  box-sizing: border-box;
   border-radius: 12px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #181818;
+  border: 1px solid #a1c2e4;
   padding: 20px 20px 50px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease-in-out;
   position: relative;
 }
 
-.albumCard:hover {
-  transform: scale(1.05);
-}
-
 h2 {
-  font-size: 1.6em;
-  color: #333;
+  font-size: 25.6px;
+  color: white;
   margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 1.2em;
-  color: #555;
-  margin: 5px 0;
+  font-size: 19.2px;
+  color: white;
+  margin: 5px;
 }
 
 h4 {
-  font-size: 0.8em;
-  color: #555;
+  font-size: 12.8px;
+  color: white;
+  margin-bottom: 5px;
 }
 
 img {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  object-position: center;
   border-radius: 8px;
-  margin: 0 auto 15px;
-  display: block;
 }
 
 .addToCart {
-  background-color: #000000;
-  color: white;
-  font-size: 1em;
+  background-color: #a1c2e4;
+  color: #181818;
+  font-size: 16px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -88,7 +79,7 @@ img {
 }
 
 .addToCart:hover {
-  background-color: #a1c2e4;
+  background-color: white;
 }
 
 h4 {
@@ -99,4 +90,5 @@ h4 {
   padding-top: 2px;
   padding-bottom: 2px;
 }
+
 </style>

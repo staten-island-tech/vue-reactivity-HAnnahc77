@@ -1,7 +1,7 @@
 <template>
   <div class="cartCard">
     <h2>{{ album.name }}</h2>
-    <h2>$ {{ album.price }}</h2>
+    <h2 class="price">$ {{ album.price }}</h2>
   </div>
 </template>
 
@@ -13,7 +13,6 @@ defineProps({
 
 <style scoped>
 .cartCard {
-  background-color: #fff;
   padding: 20px;
   width: 900px;
   align-items: left;
@@ -23,16 +22,16 @@ defineProps({
 }
 
 .cartCard h2 {
-  font-size: 1.5em;
+  font-size: 24px;
   font-weight: 600;
-  color: #333;
+  color: #white;
   margin: 10px 0;
 }
 
-.cartCard h2:last-of-type {
-  font-size: 1.4em;
+.price {
+  font-size: 22.4px;
   font-weight: 600;
-  color: #e74c3c;
+  color: white;
   margin-top: 10px;
 }
 </style>
