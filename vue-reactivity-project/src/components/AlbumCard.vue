@@ -35,6 +35,7 @@ function intoCart(album) {
   border: 1px solid #a1c2e4;
   padding: 20px 20px 50px 20px;
   text-align: center;
+  align-content: center;
   position: relative;
 }
 
@@ -52,7 +53,7 @@ h3 {
 
 h4 {
   font-size: 12.8px;
-  color: white;
+  color: #99a3e3;
   margin-bottom: 5px;
 }
 
@@ -68,10 +69,8 @@ img {
   color: #181818;
   font-size: 16px;
   padding: 10px 20px;
-  border: none;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  border: 0;
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -83,10 +82,6 @@ img {
 }
 
 h4 {
-  opacity: 1;
-  transition:
-    opacity 2s ease-out,
-    visibility 0s 2s;
   padding-top: 2px;
   padding-bottom: 2px;
 }
