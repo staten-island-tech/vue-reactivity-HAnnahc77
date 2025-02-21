@@ -1,6 +1,6 @@
 export const AlbumArray = [
     {
-      img: 'public/album1.webp',
+      img: '/album1.webp',
       name: 'Abbey Road',
       price: 24.99,
       band: 'The Beatles',
